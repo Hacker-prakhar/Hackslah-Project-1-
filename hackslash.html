@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<d>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        #h1{
+            margin:100px
+        }
+        #h2{
+         margin: 100px;
+        }
+        .heading{
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+           }
+           .head{
+            margin-left: 100px;
+            width:30% ;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+           }
+           #c1{
+            width:50% ;
+            margin-right: 177px;
+           }
+           #c2{
+            margin-right: 150px ;
+           }
+           .content1{
+            margin : 50px ;
+            display :flex;
+             flex-direction: row-reverse;
+           }
+           .content2{
+            width:100% ;
+            text-align: center;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+           }
+           #services{
+            width: 100%;
+            height:50px ;
+            margin: 20px;
+            text-align: center;
+            color: blue;
+            font-size: xx-large;
+            margin-left: 750px;
+           }
+           #C{
+            margin-left: 180px;
+           }
+           #c3{
+            width: 60%;
+            margin-right: 200px;
+           }
+           .content3{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 50px;
+           }
+           #A1{
+            margin-left: 165px;
+           }
+           #A2{
+            margin-right: 340px;
+           }
+           .main{
+            margin-top: 80px;
+            width:100% ;
+            display: grid;
+             grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(2,1fr);
+gap :0rem ;
+           }
+           #m4{
+            background-color: rgb(44, 40, 40);
+            color: aliceblue;
+            padding: 25px;
+           }
+          #m1{
+            padding: 50px;
+            text-align: right;
+            color: antiquewhite;
+          }
+          #m2{
+            padding: 50px;
+          }
+          #m3{
+            padding: 25px;
+            text-align: right;
+          }
+          .foot {
+            margin-top: 80px;
+            width: 100%;
+            height: 450px;
+          }
+          .foot{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 80px;
+          }
+          #f1 {
+            border-style:solid;
+            border-color: rgb(254, 255, 255);
+            border-width: 3px;
+            height: 200px;
+            width: 200px;
+            padding: 50px;
+            box-shadow: 10px 10px 30px 45px rgba(0,0,0,0.1);
+            transition-property: all;
+            transition-duration: 3s;
+            transition-delay: 5ms;
+            transition-timing-function: ease-in;
+          }
+          #f1 :hover{
+            transform: scale(1.25);
+          }
+          #f2 {
+            border-style:solid;
+            border-color: rgb(254, 255, 255);
+            border-width: 3px;
+            height: 200px;
+            width: 200px;
+            padding: 50px;
+            box-shadow: 10px 10px 30px 45px rgba(0,0,0,0.1);
+            transition-property: all;
+            transition-duration: 3s;
+            transition-delay: 5ms;
+            transition-timing-function: ease-in;
+          }
+          #f2 :hover{
+            transform: scale(1.25);
+          }
+          #f3 {
+            border-style:solid;
+            border-color: rgb(254, 255, 255);
+            border-width: 3px;
+            height: 200px;
+            width: 200px;
+            padding: 50px;
+            box-shadow: 10px 10px 30px 45px rgba(0,0,0,0.1);
+            transition-property: all;
+            transition-duration: 3s;
+            transition-delay: 5ms;
+            transition-timing-function: ease-in;
+          }
+          
+          #f3 :hover{
+            transform: scale(1.25);
+          }
+.second{
+    margin: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.end{
+    margin-top:50px ;
+    width : 60% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+body{
+    background-image: url(background\ 2.0.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ @media(max-width:800px){
+    .header{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+    }
+    .heading{
+        display: flex;
+        flex-direction: column;
+    }
+    .main{
+        display: flex ;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #m2{
+        background-color: rgb(116, 177, 218);
+    }
+    #m3{
+        background-color: black;
+        color: aliceblue;
+    }
+    .content1 , .content2 , .content3{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+@media(max-width:600px){
+.foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.content1 , .content2 , .content3{
+        flex-direction: column;
+        align-items: center;
+    }
+.end{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+.head{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.foot{
+    height: 890px;
+}
+}
+ 
+    </style>
+</head>
+<body>
+    <div class ="heading">
+        <div id ="h3"><img src="hacklogo.jpg" height="50px" wisth ="50px"></div>
+
+<div id="h4" style="font-weight: 800;">START</div>
+<div id="h4">ABOUT</div>
+<div id="h4">SERVICE</div>
+<div id="h4">BLOG</div>
+<div id="h4">OPEN SOURCE</div>
+</div>
+    <div class = "header">
+        <div id ="h1">
+            <span style="font-size:xxx-large; font-weight: 800;"> Hey,</span><span style="font-size: xx-large;">I'm Charles</span><br><br>
+            <div id="h0"style="font-size: x-large;"> I help <u>start-ups, </u>developing<br> outstanding web products  <br><br><br></div>
+           <div id ="h01">
+        <a href ="register.html"><img src="hackslash5.png" width="140px" height="80px"></a></div></div>
+        <div id ="h2"> <img src="hackslash4.jpg" height ="350px" width ="350px"></div>
+    </div>
+    <br><br>
+    <div class ="head"> 
+        <div id ="H0" > GITHUB</div>
+        <div id ="H1" style="margin-right: -20px;"> LINKEDIN</div>
+        <div id ="H2" style="margin-right: -20px;"> TWITTER</div>
+    </div>
+    <div class ="content1">
+        <div id ="c1">
+<h style="color: blue; font-size:xx-large;">ABOUT ME</h>
+<br> 
+<p> I am Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur recusandae deserunt, debitis pariatur, eum quia aliquid accusamus, ipsam ea saepe quidem veritatis iusto. amet consectetur adipisicing elit. Expedita deleniti at qui optio numquam reiciendis voluptas modi inventore omnis corrupti. Id voluptatum vero enim, repudiandae quibusdam ipsam labore voluptatem exercitationem. 
+       <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis debitis inventore amet atque tempore soluta tempora saepe laborum .
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.<p> Debitis, dolorum praesentium voluptate eum quam repudiandae suscipit repellendus fugit, animi rem cumque! Animi ab magni odit. Ipsum suscipit facilis numquam sint?</p>
+    </div>
+        <div id ="c2"> <img src ="hackslash3.jpg" height="300px" width ="300px"></div>
+        </div>
+       <h id="services"> SERVICES</h>
+       <br><br><br>
+        <div class ="content2">
+            <div id ="c3">
+            <h1 style="font-weight: 700; font-size: larger; margin-right: 230px;"> Backend Development</h1>
+            <p> Tranalating your complex buisiness logics into secure and maintain-</p>
+          <p> able code . Custom websites or services development with Laravel or </p> <p>Sympony and
+        integrations with any Saas platform like Stripe or Amazon Web Services</p> <br> <br> <a href="register.html"><img src="hackslash5.png" width="140px" height="80px"></a></div>
+        <div id ="C"><img src="hackslash2.jpg" height="350px" width="350px"></div>
+            </div>
+        </div>
+        <br> <br>
+        <div class ="content3">
+            <div id ="A1">
+            <h1 style="font-size: larger;"> Frontend Development </h1>
+            <p>Building your awesome product from a visual concept of fully func-</p>
+            <p>tional application .Sketch integrations in Bootstrap or Material Design or</p>
+            <p> and mode in single page apps development with Vue,React</p>
+            <p> Angular .</p>
+            <br>
+           <a href="register.html"><img src="hackslash5.png" width="140px" height="80px"></a>
+            </div>
+            <div id ="A2">
+                <img src ="hackslash1.jpg" height ="350px" width ="350px"> 
+                
+            </div>
+    </div>
+        <div class ="main">
+            <div id ="m1" style="background-color: rgb(95, 95, 236);">
+                <h1 style="font-size: x-large;"> Building a blog with Jekyll <br> Docker and GitLab</h1>
+                <br>
+                <p style="margin-right: 160px;"> May 22,2015 -2 minute read            </p><br>
+                <p>Developing a Jekyll blog with Docker To GitLab Pages</p>
+                <br>
+                <br> 
+                <p style="font-size: x-large;"> => READ ARTICLE</p>
+            </div>
+            <div id ="m2">
+                <h1 style="font-size: x-large;"> Buisiness - A PHP library for <br> buisines date calculations</h1>
+                <br> 
+               <p>May 22 2015 - 2 minute read </p>
+               <p>Discovering Buisiness , a PHP Library to ease dealing with buisiness 
+              <br>  date calculations</p>
+<br> <br> <br>
+<p style="font-size: x-large;color: rgb(49, 10, 244);"> => READ ARTICLE</p>
+
+            </div>
+            <div id ="m3">
+                <h1 style="font-size: x-large;"> Data tables with Symfony ,<br> Hateoas and Angular Js</h1>
+                <br>
+                <p style="margin-right: 220px;"> May 22 , 2015- 2 minute read</p>
+                <p> Building a simple angular table consuming a Hateous REST API </p><br>
+                <p style="font-size: x-large;color: rgb(24, 24, 229);"> => READ ARTICLE</p>
+            </div>
+            <div id ="m4">
+                <h1 style="font-size:x-large;"> SWAP - A PHP exchange rates <br> library</h1>
+                <br>
+                <p> May 22 , 2015- 2 minute read</p>
+                <p> Discovering Swap , an exchange rates library for PHP </p>
+    <br>
+                <p style="font-size: x-large;color: wheat"> => READ ARTICLE</p>
+            </div>
+
+        </div>
+        <h1 style="color: blue; margin-left: 550px;margin-top: 50px;"> OPEN SOURCE</h1>
+
+        <div class ="foot" >
+            <div id ="f1">
+                <p style="font-size: x-large; font-weight: 700;"> < / > SWAP </p>
+                    <p> Currency exchange rates <br> library for PHP</p>
+                    <br>
+                    <span > <img src="star.jpg" height ="30px" width ="30px"> 645 </span>
+                    <span> <img src="network.jpg" height="30px" width ="30px" style="margin-left: 45px;"> 324</span>
+                    
+            </div>
+            <div id ="f2" style="background-color: rgb(18, 18, 18); color: aliceblue;">
+                <p style="font-size: large; font-weight: 700;"> < / > SWAP </p>
+                <p> Currency exchange rates <br> library for PHP</p>
+                <br>
+                <span > <img src="star.jpg" height ="30px" width ="30px"> 645 </span>
+                <span> <img src="network.jpg" height="30px" width ="30px" style="margin-left: 45px;"> 324</span>
+                
+            </div>
+<div id ="f3">
+    <p style="font-size: large; font-weight: 700;"> < / > SWAP </p>
+    <p> Currency exchange rates <br> library for PHP</p>
+    <br>
+    <span > <img src="star.jpg" height ="30px" width ="30px"> 645 </span>
+    <span> <img src="network.jpg" height="30px" width ="30px" style="margin-left: 45px;"> 324</span>
+</div>
+        </div>
+        <br>
+        <div id ="dot" style="text-align: center;"> <img src="dotter.jpg" height="60px" width="60px"></div>
+        <div class ="second">
+            <div id ="s1" style="margin-left: 80px;"> <p style="color: blue; font-size: larger;">Need help developing your application ?<br> </p>
+            <P> Let's get in touch !</P>
+        </div>
+        <div id ="s2" style="margin-right: 100px;">  <a href ="register.html"><img src="hackslash5.png" width="140px" height="80px"></a> </div>
+        </div>
+        <div class ="end">
+            <div id ="e1"> <span> <img src="hacklogo.jpg" height="50px" width ="50px"></span><span>Charles Von der Hejden</span><br><span> @2018-All Rights reserved</span></div>
+        <div id ="e2">GITHUB</div>
+        <div id ="e2">LINKEDIN</div>
+        <div id ="e2">TWITTER</div>
+        </div>
+</body>
+</html>
